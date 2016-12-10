@@ -1,11 +1,20 @@
 doctype html
 html(lang='en')
     head
-        meta(charset='utf-8')
+        meta(name="viewport" content="width=device-width, initial-scale=1")
         title Curiosity IO - Mobile app development
         link(rel='stylesheet', href='https://unpkg.com/tachyons@4.5.5/css/tachyons.min.css')
     body
-        .w-100.min-vh-100.bg-near-black.content-center.flex.tc.justify-center.flex-column
+        nav.db.dt-l.w-100.border-box.pa3.ph5-l
+            a.db.dtc-l.v-mid.mid-gray.link.dim.w-100.w-25-l.tc.tl-l.mb2.mb0-l(href='#', title='Home')
+                img.dn.dib-m.w2.h2.br-100(src='img/c_circle_black.svg', alt='Site Name')
+            .db.dtc-l.v-mid.w-100.w-75-l.tc.tr-l
+                a.link.dim.dark-gray.f6.f5-l.dib.mr3.mr4-l(href='#', title='About') About
+                a.link.dim.dark-gray.f6.f5-l.dib.mr3.mr4-l(href='#', title='Process') Process
+                a.link.dim.dark-gray.f6.f5-l.dib.mr3.mr4-l(href='#', title='Pricing') Pricing
+                a.link.dim.dark-gray.f6.f5-l.dib.mr3.mr4-l(href='#', title='Contact') Contact
+
+        .w-100.min-vh-100.bg-near-black.content-center.flex.tc.justify-center.flex-column.pa4
             img.mw6.center(src="img/logo_white.svg")
-            h1.f1.normal.white.pv3.w-70.center Android and iOS app development for startups.
-            a.f2.normal.link.white.b.ba.pv2.ph4.br2.center(href="#") Learn more
+            h1.f1-m.f3.normal.white.pv3.w-70.center Android and iOS app development for startups.
+            a.f2-m.f4.normal.link.white.b.ba.pv2.ph4.br2.center(href="#") Learn more
