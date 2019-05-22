@@ -4,45 +4,29 @@ html(lang='en')
         meta(name="viewport" content="width=device-width, initial-scale=1")
         title Curiosity IO - Mobile app development
         link(rel='stylesheet', href='https://unpkg.com/tachyons@4.5.5/css/tachyons.min.css')
-        include google_analytics.pug
     body
-        nav.db.dt-l.w-100.border-box.pa3.ph5-l.fixed.top-0.bg-white.bb
-            .db.dtc-l.v-mid.w-100.w-75-l.tc.tr-l
-                a.link.dim.dark-gray.f6.f5-l.dib.mr3.mr4-l(href='#about', title='About') About
-                a.link.dim.dark-gray.f6.f5-l.dib.mr3.mr4-l(href='#process', title='FAQ') Process
-                a.link.dim.dark-gray.f6.f5-l.dib.mr3.mr4-l(href='#faq', title='faq') FAQ
-                a.link.dim.dark-gray.f6.f5-l.dib.mr3.mr4-l(href='#contact', title='Contact') Contact
+        include _include/util.pug 
+        include _include/nav.pug
 
         .w-100.min-vh-100.bg-near-black.content-center.flex.tc.justify-center.flex-column.pa4.pt5
-            img.mw6-ns.mw5.center(src="img/logo_white.png")
+            img.mw6-ns.mw5.center(src="/img/logo_white.png")
             h1.f1-m.f3.normal.white.pv3.w-70.center Android and iOS app development for startups.
             a.f2-m.f4.normal.link.white.b.ba.pv2.ph4.br2.center(href="#about") Learn more
         #about.w-100.bg-white.near-black.tc.pa4
-            img.br-100.mw5.center(src="img/levi.jpg")
-            h2.f2 Hi, I'm #[a.link.light-silver.pointer(href="http://levibostian.com" target="_blank") Levi].
+            img.br-100.mw5.center(src="https://gravatar.com/avatar/22355580305146b21508c74ff6b44bc5?s=250")
+            h2.f2 Hi, I'm #[a.link.light-silver.pointer(href="/portfolio" target="_blank") Levi] (he/him).
             h2.f3 Professional problem solver.
             p.measure.center.f4.tl.lh-copy
-                | Startup founder, freelancer, mentor, entrepreneur, geek.
+                | Startup founder, freelancer, mentor, instructor, Android and iOS app developer.
                 | You will work with me every step of the way with your mobile app idea.
             p.measure.center.f4.tl.lh-copy
-                | I started Curiosity IO to build the next great app with only the most passionate founders.
-                | If you are ready to make your idea a reality, let's talk.
+                | I started Curiosity IO out of my love of startups and mobile apps. I love the challenges that freelancing brings because you never know what project will come in the door. Also, I get to work with the hardest working individuals that you will ever meet: entrepreneurs (woot, woot!) 
             p.measure.center.f4.tl.lh-copy
-                | I have been building mobile apps for startups since 2013 and a freelancer long before that.
-                | I mentor dozens of startups around the country helping them build the best
-                | mobile apps. Expect me to treat you the same.
+                | I have been building mobile apps for startups since 2013 and a freelancer since I was 13.
+                | I have #[+link("worked with over 100 startups", "/portfolio")] from around the country helping them build the best 
+                | mobile apps. Expect me to make your app successful, not just be someone who builds you an app.
             p.measure.center.f4.tl.lh-copy
-                | When you work with me, our top priority will be the end user of the mobile app. I practice
-                | #[a.link.light-silver.pointer(href="https://en.wikipedia.org/wiki/User-centered_design" class="link" target="_blank") User-Centered Design]
-                | where decisions are made based on the user experience of the mobile app. It only takes 1 second for
-                | a user to uninstall your app. It wont be because of a bad user experience.
-            .center
-                a(href="https://twitter.com/levibostian" target="_blank")
-                    img.mw2.pa1(src="img/twitter.svg")
-                a(href="https://medium.com/@levibostian" target="_blank")
-                    img.mw2.pa1(src="img/medium.svg")
-                a(href="mailto:levi@curiosityio.com")
-                    img.mw2.pa1(src="img/envelope.svg")
+                | Personally, I believe that software should be fun, valuable, and easy to use. Also, if software requires a tutorial or training to use it, it could have been built better. This all sounds great, but all to often we use software that is slow, time consuming, frustrating, and makes you feel out of control. That is one reason I do what I do. I take pride in my work and build apps that make people enjoy to use software. 
             #promises.w-100.bg-white.content-center.tc.pt4
                 .bg-white.w-80-m.w-50-l.center.pa4.shadow-3.tl
                     h2.f3.tc This is what you can expect from me.
@@ -67,17 +51,16 @@ html(lang='en')
                             | realizing it.
                         dt.f3.b.pt3 Build what provides the most value
                         dd.ml0.lh-copy
-                            | My apps are built from scratch for your end user. Your mobile app will look good, run
-                            | fast, and be fun to use.
-                            | I am a startup founder, like yourself, and I care most about providing value to the user.
-                            | In fact, the very first conversation we have together we will consider if a mobile app
-                            | is the best solution to solve your user's problem.
+                            | As a startup founder myself, I will recommend a plan to you on how we can build an app that provides the most value in the shortest amount of time and cost. Let's not build an app to build an app. Let's build an app that solves a real problem. 
+                        dt.f3.b.pt3 Share my experience launching apps 
+                        dd.ml0.lh-copy
+                            | Each and every app that I build comes with many features by default: your app will work without an Internet connection to have little to no loading screens (because we all hate loading screens), user activity analytics (while also focusing on user privacy), data backups in case of failures, push notifications, A/B testing abilities, email newsletter setup for you to send updates to users. Everything you need to launch a successful mobile app, by default! 
         #process.w-100.bg-white.tc
             .bg-near-black
                 h1.f1.white.pa4.f-subheadline-m.f-headline-l Process
             h1.f3.f2-ns.mw5.mw6-ns.center Here is my process we will go through together.
             dl.lh-title.pa2.mt0.measure.tl.w-80-m.w-50-l.center
-                dt.f3.b.pt3 Consulting
+                dt.f3.b.pt3 Brainstorming phase 
                 dd.ml0.lh-copy
                     | One reason why I love my job so much is I get to meet founders who want to make the world
                     | a better place. The first step to working together is for me to understand two questions really well:
@@ -85,46 +68,27 @@ html(lang='en')
                     | start to rock and roll.
                     br
                     br
-                    | The consulting phase consists of one or two phone calls and emails.
-                    | It's never too early to contact me about your idea (in fact, it's better to be early then late).
-                    | Don't attempt to create a 30 page document explaining your idea. It's simply not needed. Contact me and I will help you to collect the
-                    | information that I need for us to move forward.
-                    br
-                    br
-                    | Please, I would be delighted if you #[a.link.light-silver.pointer(href="mailto:levi@curiosityio.com") email me hello] and tell
-                    | me about yourself and your project.
-                dt.f3.b.pt3 Design
+                    | The brainstorming phase consists of 2-3 phone calls and emails. Do not worry if you are not knowledgeable on technology. During the phone calls and all other communication together, we will talk in plain English with the technology aside. Technology is just a tool. Without a problem, the technology cannot do anything for us. 
+                    br 
+                dt.f3.b.pt3 Design phase 
                 dd.ml0.lh-copy
-                    | After I have collected the information I need, it's time to start building this app. I work with
-                    | talented professional designers who are experts at telling stories. We can create a brand for you
-                    | or build an app formed around your existing brand.
+                    | After I have collected the information I need, it's time to start building this app. 
+                    | To start the design phase, I create a paper and pencil mockup of your mobile app. Paper and pencil is wonderful because it allows us to make changes quickly and can concentrate on the functionality of the app instead of colors. You will receive a paper and pencil design of the app that you can use yourself on your smartphone to walk through the app. 
                     br
                     br
-                    | To start the design phase, I create a paper and pencil mockup of your mobile app. Paper and pencil
-                    | seems low-tech but it allows us to find the best design quickly. After my designers and I are happy
-                    | with our paper and pencil mockups, we put them to the test. We test the mockups with real people who
-                    | have never heard of your product before to see if they find the app easy to use.
-                    br
-                    br
-                    | After testing is performed, we make changes to our designs and finalize it. We create a digital version
-                    | of the paper and pencil mockups to closely resemble the final product. This is the first time that
-                    | you get to really #[i feel] your idea in your hand on your phone.
-                dt.f3.b.pt3 Development
+                    | After you are happy with the paper and pencil design, you will receive a digital design version of the app. Here, you will see the paper and pencil design come to life with color and graphics. This is the final step of the design phase and the time where you can make the final approval of the app. 
+                dt.f3.b.pt3 Development phase 
                 dd.ml0.lh-copy
                     | After you have checked off design, it is time to make your idea real.
-                    | I develop your mobile app in 1 week sprints. What this means is this: Once a week you will receive
-                    | a YouTube video from me with a demo of the progress from the past week. Also, I create a build of
-                    | your mobile app that you actually install on your devices to start using.
+                    | During the development phase, every 1 to 2 weeks, you will receive (1) a YouTube video demo of the app progress as well as (2) a build of the app you can install on your devices to try yourself. 
                     br
                     br
-                    | Have a list of email addresses of users ready to beta test your mobile app? Awesome. We can add
-                    | all of your beta customers at any time from day 1 of development. The more the merrier.
+                    | Also, you will have the ability to have beta testers test the app while still in development. This allows you to invite select customers of yours, employees, or others to try out the app early and to find issues with it for me to fix before we release to the public. 
                     br
                     br
-                    | I have been writing code for half of my young life. I am a geek at heart and proud of it. I develop clean code
-                    | that you can feel confident handing to your future development team after I am complete. I offer my contact
-                    | information to you and your future developers if they have questions. I am proud to say I receive
-                    | nothing but compliments back from the developers!
+                    | When the app development is finished, I will publish it to the public app stores (if you wish). From there, you will have access to (1) user activity analytics you can use to make decisions about the future of the app, (2) view and respond to reviews on the app stores, (3) and access to all of the materials used to create the app including the code. 
+
+                dt.f3.b.pt3 That is the gist. If you would like to see a more detailed example of my process, #[+link("click here", "/example")].
 
         #faq.w-100.bg-white.tc
             .bg-near-black
@@ -132,21 +96,18 @@ html(lang='en')
             dl.lh-title.pa2.mt0.measure.tl.w-80-m.w-50-l.center
                 dt.f3.b.pt3 Q: What if there is a new feature that I want to add in 2 months after we launch?
                 dd.ml0
-                    | A: We go through the cycle again for this new feature. Consulting, design, development.
+                    | A: We go through the cycle again for this new feature. Brainstorming, design, development.
                     .mw4.tc.center
                         img(src="img/cycle.svg")
                 dt.f3.b.pt3 Q: What type of apps have you built in the past?
                 dd.ml0.lh-copy
-                    | A: Mobile banking apps, video social media apps, music social media apps, documentation apps, cooking apps,
-                    | I can build about any type of app. As we speak, I am actually building an email app, group messaging app,
-                    | and some early plans of a workout app. #[a.link.light-silver.pointer(href="mailto:levi@curiosityio.com") email me about your project] and
-                    | I would be happy to talk about your idea and what it takes to build it.
+                    | A: Oh, what haven't I built... Social media, video/music streaming, education, health, manufacturing, fashion, the list goes on and on. #[a.link.light-silver.pointer(href="/portfolio") Check out my portfolio] to learn more. 
                 dt.f3.b.pt3 Q: What do you charge?
                 dd.ml0
                     | A: Here is the breakdown of pricing:
                 ul
                     li.lh-copy
-                        | #[strong Consulting]: $75.00/hr with first 30 minute call on me. Consulting averages about 1 - 3 hours in total.
+                        | #[strong Brainstorming phase (aka: consulting)]: $75.00/hr with first hour call on me. Consulting averages about 1 - 3 hours in total.
                         | After our first hour of consulting, I can start to create an estimate for the project cost.
                     li.lh-copy
                         | #[strong Design]: Project based pricing. I create an invoice for the entire design process (paper and pencil, testing, digital mockups),
@@ -154,25 +115,7 @@ html(lang='en')
                     li.lh-copy
                         | #[strong Development]: Project based pricing. After the design phase is complete, I create an invoice for the cost of the entire development
                         | phase. From here, you pay the invoices in 2 week increments.
-        #contact.w-100.bg-white.tc
-            .bg-near-black
-                h1.f1.white.pa4.f-subheadline-m.f-headline-l Contact
-            .tc.w-80-m.w-50-l.center.near-black.pb4
-                h1 Please, tell me what you are working on! What do you need help with?
-                a.f2-m.f4.normal.link.near-black.b.ba.pv2.ph4.br2.center(href="mailto:levi@curiosityio.com") Email me
-                .center.pt3
-                    a(href="https://twitter.com/levibostian" target="_blank")
-                        img.mw2.pa1(src="img/twitter.svg")
-                    a(href="https://medium.com/@levibostian" target="_blank")
-                        img.mw2.pa1(src="img/medium.svg")
-        footer.pv4.ph3.ph5-m.ph6-l.bg-near-black.white
-            small.f6.db.tl
-                | Curiosity IO
-                br
-                | PO Box 2567
-                br
-                | Cedar Rapids, IA
-                br
-                | 52406
-            .tl.mt3
-                a.f6.dib.ph2.link.mid-gray.dim(href='mailto:levi@curiosityio.com') levi@curiosityio.com
+                        br 
+                    h3 For a more detailed explanation of my process, #[+link("click here", "/example")]. 
+        include _include/contact.pug 
+        include _include/footer.pug 

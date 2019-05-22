@@ -1,5 +1,6 @@
 # manually added
 node_modules/
+.firebase/
 
 # _site
 .sass-cache
