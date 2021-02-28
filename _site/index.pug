@@ -2,120 +2,29 @@ doctype html
 html(lang='en')
     head
         meta(name="viewport" content="width=device-width, initial-scale=1")
-        title Curiosity IO - Mobile app development
+        title Curiosity IO - Mobile app playground
         link(rel='stylesheet', href='https://unpkg.com/tachyons@4.5.5/css/tachyons.min.css')
     body
         include _include/util.pug 
-        include _include/nav.pug
+        // include _include/nav.pug
 
-        .w-100.min-vh-100.bg-near-black.content-center.flex.tc.justify-center.flex-column.pa4.pt5
+        .w-100.bg-near-black.content-center.flex.tc.justify-center.flex-column.pa5.pt6
             img.mw6-ns.mw5.center(src="/img/logo_white.png")
-            h1.f1-m.f3.normal.white.pv3.w-70.center Android and iOS app development for startups.
-            a.f2-m.f4.normal.link.white.b.ba.pv2.ph4.br2.center(href="#about") Learn more
-        #about.w-100.bg-white.near-black.tc.pa4
-            img.br-100.mw5.center(src="https://gravatar.com/avatar/22355580305146b21508c74ff6b44bc5?s=250")
-            h2.f2 Hi, I'm #[a.link.light-silver.pointer(href="/portfolio" target="_blank") Levi] (he/him).
-            h2.f3 Professional problem solver.
+            h1.f1-m.f3.normal.white.pv3.w-70.center Mobile app playground
+        #notice.w-100.bg-white.near-black.tc.pa4
+            h2 Freelancing services announcement
             p.measure.center.f4.tl.lh-copy
-                | Startup founder, freelancer, mentor, instructor, Android and iOS app developer.
-                | You will work with me every step of the way with your mobile app idea.
-            p.measure.center.f4.tl.lh-copy
-                | I started Curiosity IO out of my love of startups and mobile apps. I love the challenges that freelancing brings because you never know what project will come in the door. Also, I get to work with the hardest working individuals that you will ever meet: entrepreneurs (woot, woot!) 
-            p.measure.center.f4.tl.lh-copy
-                | I have been building mobile apps for startups since 2013 and a freelancer since I was 13.
-                | I have #[+link("worked with over 100 startups", "/portfolio")] from around the country helping them build the best 
-                | mobile apps. Expect me to make your app successful, not just be someone who builds you an app.
-            p.measure.center.f4.tl.lh-copy
-                | Personally, I believe that software should be fun, valuable, and easy to use. Also, if software requires a tutorial or training to use it, it could have been built better. This all sounds great, but all to often we use software that is slow, time consuming, frustrating, and makes you feel out of control. That is one reason I do what I do. I take pride in my work and build apps that make people enjoy to use software. 
-            #promises.w-100.bg-white.content-center.tc.pt4
-                .bg-white.w-80-m.w-50-l.center.pa4.shadow-3.tl
-                    h2.f3.tc This is what you can expect from me.
-                    hr.mw6.bb.bw1.b--black-10
-                    dl.lh-title.pa4-m.pa4-l.mt0.measure
-                        dt.f3.b.pt3 Intuitive design
-                        dd.ml0.lh-copy
-                            | I take a lot of pride in my craft. Each project that I create is built from scratch.
-                            | I study the #[a.link.light-silver.pointer(href="https://developer.apple.com/ios/human-interface-guidelines/overview/design-principles/" class="link" target="_blank") Apple] and
-                            | #[a.link.light-silver.pointer(href="https://material.google.com/" target="_blank") Google]
-                            | design guidelines to assert that each mobile app looks and feels their very best.
-                            br
-                            br
-                            | I believe that if your mobile app requires a tutorial, you need to redesign it.
-                            | Your iPhone users will feel familiar with my iPhone apps and Android users will
-                            | feel familiar with my Android apps.
-                        dt.f3.b.pt3 Bug-free apps
-                        dd.ml0.lh-copy
-                            | Your app will have issues. There is no such thing as completely bug-free software.
-                            | To get as close as we can, every time that one of your users has an issue with your
-                            | mobile app, I get notified, fix the issue, and release a fix all without you
-                            | realizing it.
-                        dt.f3.b.pt3 Build what provides the most value
-                        dd.ml0.lh-copy
-                            | As a startup founder myself, I will recommend a plan to you on how we can build an app that provides the most value in the shortest amount of time and cost. Let's not build an app to build an app. Let's build an app that solves a real problem. 
-                        dt.f3.b.pt3 Share my experience launching apps 
-                        dd.ml0.lh-copy
-                            | Each and every app that I build comes with many features by default: your app will work without an Internet connection to have little to no loading screens (because we all hate loading screens), user activity analytics (while also focusing on user privacy), data backups in case of failures, push notifications, A/B testing abilities, email newsletter setup for you to send updates to users. Everything you need to launch a successful mobile app, by default! 
-        #process.w-100.bg-white.tc
-            .bg-near-black
-                h1.f1.white.pa4.f-subheadline-m.f-headline-l Process
-            h1.f3.f2-ns.mw5.mw6-ns.center Here is my process we will go through together.
-            dl.lh-title.pa2.mt0.measure.tl.w-80-m.w-50-l.center
-                dt.f3.b.pt3 Brainstorming phase 
-                dd.ml0.lh-copy
-                    | One reason why I love my job so much is I get to meet founders who want to make the world
-                    | a better place. The first step to working together is for me to understand two questions really well:
-                    | #[i "What is the problem you are working to solve?"] and #[i "Who is your customer?"]. From there we can
-                    | start to rock and roll.
-                    br
-                    br
-                    | The brainstorming phase consists of 2-3 phone calls and emails. Do not worry if you are not knowledgeable on technology. During the phone calls and all other communication together, we will talk in plain English with the technology aside. Technology is just a tool. Without a problem, the technology cannot do anything for us. 
-                    br 
-                dt.f3.b.pt3 Design phase 
-                dd.ml0.lh-copy
-                    | After I have collected the information I need, it's time to start building this app. 
-                    | To start the design phase, I create a paper and pencil mockup of your mobile app. Paper and pencil is wonderful because it allows us to make changes quickly and can concentrate on the functionality of the app instead of colors. You will receive a paper and pencil design of the app that you can use yourself on your smartphone to walk through the app. 
-                    br
-                    br
-                    | After you are happy with the paper and pencil design, you will receive a digital design version of the app. Here, you will see the paper and pencil design come to life with color and graphics. This is the final step of the design phase and the time where you can make the final approval of the app. 
-                dt.f3.b.pt3 Development phase 
-                dd.ml0.lh-copy
-                    | After you have checked off design, it is time to make your idea real.
-                    | During the development phase, every 1 to 2 weeks, you will receive (1) a YouTube video demo of the app progress as well as (2) a build of the app you can install on your devices to try yourself. 
-                    br
-                    br
-                    | Also, you will have the ability to have beta testers test the app while still in development. This allows you to invite select customers of yours, employees, or others to try out the app early and to find issues with it for me to fix before we release to the public. 
-                    br
-                    br
-                    | When the app development is finished, I will publish it to the public app stores (if you wish). From there, you will have access to (1) user activity analytics you can use to make decisions about the future of the app, (2) view and respond to reviews on the app stores, (3) and access to all of the materials used to create the app including the code. 
-
-                dt.f3.b.pt3 That is the gist. If you would like to see a more detailed example of my process and see some of my past work, #[+link("click here", "/example")].
-
-        #faq.w-100.bg-white.tc
-            .bg-near-black
-                h1.f1.white.pa4.f-subheadline-m.f-headline-l FAQ
-            dl.lh-title.pa2.mt0.measure.tl.w-80-m.w-50-l.center
-                dt.f3.b.pt3 Q: What if there is a new feature that I want to add in 2 months after we launch?
-                dd.ml0
-                    | A: We go through the cycle again for this new feature. Brainstorming, design, development.
-                    .mw4.tc.center
-                        img(src="img/cycle.svg")
-                dt.f3.b.pt3 Q: What type of apps have you built in the past?
-                dd.ml0.lh-copy
-                    | A: Oh, what haven't I built... Social media, video/music streaming, education, health, manufacturing, fashion, the list goes on and on. #[a.link.light-silver.pointer(href="/portfolio") Check out my portfolio of past work] to learn more. 
-                dt.f3.b.pt3 Q: What do you charge?
-                dd.ml0
-                    | A: Here is the breakdown of pricing:
-                ul
-                    li.lh-copy
-                        | #[strong Brainstorming phase (aka: consulting)]: $75.00/hr with first hour call on me. Consulting averages about 1 - 3 hours in total.
-                        | After our first hour of consulting, I can start to create an estimate for the project cost.
-                    li.lh-copy
-                        | #[strong Design]: Project based pricing. I create an invoice for the entire design process (paper and pencil, testing, digital mockups),
-                        | you pay the invoice in full, then we perform the full design phase and deliver the result to you.
-                    li.lh-copy
-                        | #[strong Development]: Project based pricing. After the design phase is complete, I create an invoice for the cost of the entire development
-                        | phase. From here, you pay the invoices in 2 week increments.
-                        br 
-                    h3 For a walk through example of my process, #[+link("click here", "/example")]. 
-        include _include/contact.pug 
+                | You may have arrived at this website to learn more about freelancing services to get your app idea built. It is true, Curiosity IO has been known for it's freelance Android and iOS app development services since 2015. #[b However, as of February 2021, Curiosity IO is no longer providing any services.]
+                br
+                br
+                | I have enjoyed every single minute of freelancing the past 6 years. I have worked with over 100 different businesses and built over 25 mobile apps I am very proud of. I have grown more in love with building products and working with teams to get an idea to launch. 
+                br
+                br
+                | Curiosity IO was not originally created for freelancing. When I started it, I remember thinking to myself, #[i "I want a place where I can explore my curiosity with tech. Invent new ideas. Try out concepts never done before. I want a playground for myself to play."] For the past handful of years, Curiosity IO has been focused exclusively on providing freelance services and not so much being my playground. I am very excited to bring back Curiosity IO to it's original purpose. Believe me, my mind is exploding with ideas I want to try out! 
+                br
+                br
+                | I hope that you are able to find someone wonderful to build your next idea. Make sure you always have a playground to work on your ideas.
+                br
+                br
+                | - Levi 
         include _include/footer.pug 
